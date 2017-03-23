@@ -2,12 +2,12 @@
 
 ## Technologies :
 
-  - nodejs
-	- express
-	- socket.io
-	- ejs
-	- bootstrap
-	- SlimScroll.
+  nodejs
+	express
+	socket.io
+	ejs
+	bootstrap
+	SlimScroll.
 
 It can handle a lot of simultaneous connections without lag.
 
