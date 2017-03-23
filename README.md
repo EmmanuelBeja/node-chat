@@ -1,9 +1,10 @@
 # Chat App
 ## Technologies :
+
   - Node.js
 	- Express
 	- Socket.io
-	-  ejs
+	- ejs
 	- Bootstrap
 	- SlimScroll.
 
