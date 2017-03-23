@@ -1,6 +1,6 @@
-Chat
+#Chat
 
-Technologies:
+#Technologies:
 Node.js, Express, Socket.io, ejs Bootstrap and SlimScroll.
 It can handle a lot of simultaneous connections without lag.
 
