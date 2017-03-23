@@ -1,0 +1,16 @@
+{
+  "name":"politics-forum",
+  "author":"Beja",
+  "scripts": {
+  	"start": "node server.js"
+  },
+  "dependencies": {
+  	"socket.io": "*",
+  	"express": "*",
+  	"jade": "*",
+    "ejs":"*"
+  	  },
+      "engines": {
+    "node": "6.10.0"
+  }  
+}

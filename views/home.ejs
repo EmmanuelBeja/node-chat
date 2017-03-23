@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Forum</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+		<div class="container" id="main">
+			<div class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<a class="brand" href="#">Chat Forum</a>
+						<!--<span id="nbUsers"></span> user(s) online.-->
+					</div>
+			  </div>
+			</div>
+
+			<div id="chatEntries">
+		  </div>
+			<div class="row" id="entries">
+		  </div>
+
+			<input class="form-control" id="messageInput" type="text">
+			<div class="btn-group">
+				<button class="btn" id="submit" data-loading-text="Send"> Send</button>
+				<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a id="edit" href="#modalPseudo" data-toggle="modal"><i class="icon-user"></i>Change name</a></li>
+					<li><a id="info" href="#modalInfos" data-toggle="modal"><i class="icon-info-sign"></i>Infos</a></li>
+				 </ul>
+			</div>
+			<div id="nbUsersDiv">
+				<p>
+					<span id="nbUsers"></span> user(s) online.
+				</p>
+			</div>
+
+			<!--modal-->
+			<div class="modal fade" id="modalPseudo">
+				<div class="modal-header">
+					<h3> Choose a name</h3>
+				</div>
+				<div class="modal-body">
+					<p> Choose a name :
+					<input type='text' id="pseudoInput">
+					<div class="alert alert-error" id="alertPseudo">
+						This name is already used ! Choose another one.
+					</div>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" id="pseudoSubmit"> Go to the chat</button>
+				</div>
+			</div>
+			<div class="modal fade" id="modalInfos">
+				<div class="modal-header">
+					<h3>Infos</h3>
+				</div>
+				<div class="modal-body">
+					<p>Technologies:
+						<ul>
+							<li>Node.js</li>
+						  <li>Socket.io</li>
+              <li>Express</li>
+							<li>ejs</li>
+						  <li>Bootstrap</li>
+							<li>SlimScroll</li>
+					 </ul>
+					</p>
+					<p>	Developer : Emmanuel Beja</p>
+					</div>
+				</div>
+		</div>
+    <!--javascript links -->
+		<script type="text/javascript" src="/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/jquery-ui.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
