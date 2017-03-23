@@ -1,37 +1,25 @@
-//	Customization
-//server.listen(process.env.PORT || 16558)
-//var appPort = 16558;
-
-// Librairies
-
 var express = require('express'), app = express();
 var http = require('http')
   , server = http.createServer(app)
   , io = require('socket.io').listen(server);
-
-
 var ejs = require('ejs');
-// var io = require('socket.io').listen(app);
-var pseudoArray = ['admin']; //block the admin username (you can disable it)
+var pseudoArray = ['admin']; //block admin username (you can disable it)
 
-// Views Options
-
+// Views
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.set("view options", { layout: false });
 
 app.use(express.static(__dirname + '/public'));
 
-// Render and send the main page
-
+// Render page
 app.get('/', function(req, res){
   res.render('home.ejs');
 });
-//server.listen(appPort);
-// app.listen(appPort);
-//console.log("Server listening on port " + appPort);
-server.listen(process.env.PORT || 16558)
-console.log("Server listening on port 16558");
+
+//listen port
+server.listen(process.env.PORT || 16000)
+console.log("Server listening on port 16000");
 
 
 // Handle the socket.io connections
