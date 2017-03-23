@@ -2,7 +2,7 @@
 
 ## Technologies :
 
-  - Nodejs
+   Nodejs
 	- express
 	- socket.io
 	- ejs
